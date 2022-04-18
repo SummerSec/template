@@ -13,7 +13,6 @@ jobs:
           regex: false
           include: "README.md" # 需要替换的文件内容
       - name: Push changes
-        uses: SummerSec/github-push-action@v0.6.0 # 更新README.md
+        uses: SummerSec/push@master # 更新README.md
         with:
           github_token: ${{ secrets.RELEASE }} # github token
-          branch: ${{ github.ref }} # github branch
