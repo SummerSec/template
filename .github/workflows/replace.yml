@@ -11,4 +11,4 @@ jobs:
           find: "SummerSec/template"
           replace: ${{ github.repository }}
           regex: false
-          exclude: "README.md"
+          include: "README.md" # 需要替换的文件内容
