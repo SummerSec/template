@@ -8,7 +8,7 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "template"
+          find: "SummerSec/template"
           replace: ${{ github.repository }}
           regex: false
           include: "README.md" # 需要替换的文件内容
