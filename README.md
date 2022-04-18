@@ -1,5 +1,5 @@
 
-<h1 align="center" >template{title}</h1>
+<h1 align="center" >{title}</h1>
 <h3 align="center" >个人使用模板仓库{描述}</h3>
  <p align="center">
     <a href="https://github.com/SummerSec/template"></a>
