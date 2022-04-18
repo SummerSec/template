@@ -8,7 +8,12 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "SummerSec/template"
+          find: "template"
           replace: ${{ github.repository }}
           regex: false
           include: "README.md" # 需要替换的文件内容
+      - name: Push changes
+        uses: SummerSec/github-push-action@v0.6.0 # 更新README.md
+        with:
+          github_token: ${{ secrets.RELEASE }} # github token
+          branch: ${{ github.ref }} # github branch
