@@ -12,7 +12,9 @@ jobs:
           replace: ${{ github.repository }}
           regex: false
           include: "README.md" # 需要替换的文件内容
-      - name: Push changes
-        uses: SummerSec/push@master # 更新README.md
+      - name: Commit Replace README
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.RELEASE }} # github token
+          branch: ${{ github.event.release.target_commitish }}
+          commit_message: Update README
+          file_pattern: README.md
