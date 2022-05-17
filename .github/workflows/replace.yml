@@ -18,8 +18,8 @@ jobs:
           branch: ${{ github.event.release.target_commitish }}
           commit_message: Update README
           file_pattern: README.md
-      # 私有仓库使用下面的这个更新README
-      - name: Push changes
-        uses: SummerSec/push@master # 更新README.md
-        with:
-          github_token: ${{ secrets.RELEASE }} # github token
+#       
+#       - name: Push changes
+#         uses: SummerSec/push@master # 更新README.md
+#         with:
+#           github_token: ${{ secrets.RELEASE }} # github token
