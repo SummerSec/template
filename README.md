@@ -43,5 +43,9 @@
 该工具只授权于企业内部进行问题排查，请勿用于非法用途，请遵守网络安全法，否则后果作者概不负责
 
 ----
+## 🥇 LICENSE
+
+
+---
 
 ![as](https://starchart.cc/SummerSec/template.svg)
