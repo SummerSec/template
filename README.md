@@ -45,6 +45,7 @@
 ----
 ## 🥇 LICENSE
 
+[MIT LICENSE](./LICENSE)
 
 ---
 
